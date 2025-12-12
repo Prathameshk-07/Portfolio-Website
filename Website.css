@@ -1,0 +1,129 @@
+/* -------------------------
+   Global Styling
+-------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+/* -------------------------
+   Navbar
+-------------------------- */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgb(7, 7, 7);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 1s ease;
+}
+
+nav a:hover {
+    color: #4a6cf7;
+    transform: translateY(-2px);
+}
+
+/* -------------------------
+   Header
+-------------------------- */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #4a6cf7, #6f86ff);
+    color: #fff;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* -------------------------
+   Section Styling
+-------------------------- */
+.section {
+    background: #ffffff;
+    padding: 30px;
+    margin: 25px auto;
+    border-radius: 12px;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.section h2, 
+.section h3, 
+.section h4, 
+.section h5 {
+    margin-bottom: 10px;
+    color: #4a6cf7;
+}
+
+ul li {
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+/* -------------------------
+   Project Cards
+-------------------------- */
+.project-card {
+    background: #f0f4ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    transition: 0.3s ease;
+    border-left: 6px solid #4a6cf7;
+}
+
+.project-card:hover {
+    background: #e4eaff;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* -------------------------
+   Contact Section
+-------------------------- */
+#contact p {
+    font-size: 1.1rem;
+}
+
+/* -------------------------
+   Responsive Design
+-------------------------- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+}
